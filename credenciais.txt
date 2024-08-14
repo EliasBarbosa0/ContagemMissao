@@ -1,0 +1,19 @@
+# Chaves Microsoft Entra
+tenant_id = 'tenant_id'
+client_id = 'client_id'
+client_secret = 'client_secret'
+
+# Grupo e dataset do Power B.I. Service
+dataset_id = 'dataset_id'
+group_id = 'group_id'
+impersonatedUserName = 'impersonatedUserName'
+
+# Chaves Twitter
+CONSUMER_KEY = 'CONSUMER_KEY'
+CONSUMER_SECRET = 'CONSUMER_SECRET'
+ACESS_TOKEN = 'ACESS_TOKEN'
+ACESS_TOKEN_SECRET = 'ACESS_TOKEN_SECRET'
+BEARER_TOKEN = 'BEARER_TOKEN'
+
+# caminho do csv (Pasta 'Arquivos' sincronizada com SharePoint)
+caminho =C:/Users/Diretorio/Validacao TSE/Arquivos/

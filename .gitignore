@@ -1,0 +1,10 @@
+.env
+__pycache__
+screenshot_objeto.png
+screenshot_page.png
+screenshot_objeto_recortado.png
+Playgroung.py
+Dataset
+AtualizarDropBox.py
+AgendamentoMOD.py
+ExecutarAgoraMOD.py
