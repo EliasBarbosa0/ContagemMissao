@@ -44,3 +44,4 @@ def twitt():
     
     # Imprime uma mensagem de confirmação no console
     print("Tweet postado com sucesso.")
+    print('\n==================================================================================================\n')
