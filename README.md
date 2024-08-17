@@ -1,6 +1,8 @@
-# Acompanhamento das Validações no TSE da MISSAO
+# Acompanhamento das Validações no TSE - Partido Político em Formação MISSAO
 
-O objetivo deste projeto é criar um relatório para acompanhar as validações dos apoiamentos coletados pelo partido em formação MISSAO no TSE. Além disso, foi desenvolvido um comparativo dos apoiamentos validados de todos os partidos em processo de formação. A solução adotada importa dados de todos os partidos disponíveis no site oficial do TSE, permitindo que o número exato de partidos varie conforme novos postulantes surjam ou partidos existentes sejam excluídos por perda de prazo.
+**Português** | [English](README-en-us.md)
+
+O objetivo deste projeto é criar um relatório para acompanhar as validações dos apoiamentos coletados pelo partido em formação MISSAO no TSE (Tribunal Superior Eleitoral). Além disso, foi desenvolvido um comparativo dos apoiamentos validados de todos os partidos em processo de formação. A solução adotada importa dados de todos os partidos disponíveis no site oficial do TSE, permitindo que o número exato de partidos varie conforme novos postulantes surjam ou partidos existentes sejam excluídos por perda de prazo.
 
 Os apoiamentos validados podem ser obtidos através do site oficial: [Partidos em Formação - TSE](https://www.tse.jus.br/partidos/criacao-de-partido/partidos-em-formacao). 
 
