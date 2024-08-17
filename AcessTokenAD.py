@@ -26,6 +26,6 @@ def get_access_token():
     # Obtem o bearer token
     token_response = requests.post(token_url, headers=token_headers, data=token_body)
     if token_response.status_code != 200:
-        raise Exception(f"Failed to get token: {token_response.status_code} - {token_response.text}")
+        raise Exception(f"Falha ao obter token: {token_response.status_code} - {token_response.text}")
     
     return token_response.json().get('access_token')
