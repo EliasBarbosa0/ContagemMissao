@@ -50,8 +50,10 @@ scheduler.add_job(tarefa, 'cron', day_of_week='mon-fri', hour=18, minute=0, misf
 scheduler.add_job(tarefa, 'cron', day_of_week='mon-fri', hour=19, minute=0, misfire_grace_time=misfire_grace_time)
 scheduler.add_job(tarefa, 'cron', day_of_week='mon-fri', hour=20, minute=0, misfire_grace_time=misfire_grace_time)
 scheduler.add_job(tarefa, 'cron', day_of_week='mon-fri', hour=21, minute=0, misfire_grace_time=misfire_grace_time)
-scheduler.add_job(tarefa2, 'cron', day_of_week='sat', hour=10, minute=0, misfire_grace_time=misfire_grace_time)  # Sábado às 10:00
-scheduler.add_job(tarefa2, 'cron', day_of_week='sun', hour=10, minute=0, misfire_grace_time=misfire_grace_time)  # Domingo às 10:00
+scheduler.add_job(tarefa2, 'cron', day_of_week='sat', hour=10, minute=0, misfire_grace_time=misfire_grace_time)
+scheduler.add_job(tarefa2, 'cron', day_of_week='sat', hour=21, minute=0, misfire_grace_time=misfire_grace_time)
+scheduler.add_job(tarefa2, 'cron', day_of_week='sun', hour=10, minute=0, misfire_grace_time=misfire_grace_time)
+scheduler.add_job(tarefa2, 'cron', day_of_week='sun', hour=21, minute=0, misfire_grace_time=misfire_grace_time)
 
 # Inicia o agendador para começar a executar as tarefas nos horários definidos
 scheduler.start()
