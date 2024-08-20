@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def f(numero):
+def fn(numero):
     # Converte o número para um inteiro (remove casas decimais)
     numero_inteiro = int(round(numero,0))
     
