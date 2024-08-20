@@ -55,10 +55,10 @@ The directory synchronized with SharePoint must contain the [Arquivos](Arquivos)
 
 In the same synchronized directory, the [Parametros](Parametros) folder should be copied. This folder contains files with the basic and unchangeable attributes of the tabular cube, such as flag images, state acronyms, minimum support number per state, validation estimate by Aliança, non-working days, etc. These parameters need to be imported only once into the tabular model, with the option "Include in report refresh" disabled.
 
-The entire structure and metrics of the tabular cube are in the [ContagemMissão.pbit](ContagemMissão.pbit) file. Upon opening it for the first time, configure the access credentials to the SharePoint directory in Power Query, in the connection-only table called "conexão" in the "ConexãoSharePoint" folder.
+The entire structure and metrics of the tabular cube are in the [ContagemMissão](./ModeloTabular/ContagemMissão) folder. Upon opening it for the first time, configure the access credentials to the SharePoint directory in Power Query, in the connection-only table called "conexão" in the "ConexãoSharePoint" folder.
 
 In the .pbit from this repository, the "Arquivos" and "Parametros" folders are located in a directory called "Validacao TSE" within "Documentos Compartilhados" of the SharePoint Online site. The solution to be adopted is up to you, as long as the final Power Query tables are maintained as they are.
 
-If you use the summary print in the tweet, there must be a public Power BI report on the web that will be the source of the screenshot. The report used for the summary is in the [Imagem.pbit](Imagem.pbit) file. It will also be necessary to modify the [ImageMatriz.py](ImageMatriz.py) script, replacing the link and configuring the screenshot dimensions.
+If you use the summary print in the tweet, there must be a public Power BI report on the web that will be the source of the screenshot. The report used for the summary is in the [Imagem](./ModeloTabular/Imagem) folder. It will also be necessary to modify the [ImageMatriz.py](ImageMatriz.py) script, replacing the link and configuring the screenshot dimensions.
 
 The public Power BI report obtained with this project can be accessed through this [link](https://app.powerbi.com/view?r=eyJrIjoiMmVkZjM0ODEtNjkyMi00NjliLTlkYTgtNDE3ODg0ZTE1NDhlIiwidCI6ImFkY2JiMThhLWE3NzEtNDU5OS04YjllLWFiM2IzNmE3NWY1MSJ9).
