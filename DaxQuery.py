@@ -40,7 +40,7 @@ def execute_dax_query():
     # Execute the DAX query
     query_response = requests.post(query_url, headers=query_headers, data=json.dumps(dax_query))
     if query_response.status_code != 200:
-        raise Exception(f"Failed to execute query: {query_response.status_code} - {query_response.text}")
+        raise Exception(f'falha ao executar a query: {query_response.status_code} - {query_response.text}')
     
     json_response = query_response.json()
     
