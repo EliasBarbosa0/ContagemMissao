@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "ContagemMissão"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "71d44522-fbf0-4bf4-aa4e-6d89d29dad03"
+  }
+}

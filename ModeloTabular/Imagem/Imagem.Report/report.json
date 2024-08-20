@@ -1,0 +1,43 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Principal",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter1361e25f7d46cddb2710\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fato_Apoiamentos\"}},\"Property\":\"Nome\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fato_Apoiamentos\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Nome\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'MISSÃO'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"Filter56e3523e01a17b10a9b6\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dim_Calendario\"}},\"Property\":\"Ultima Data\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Calendario\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Ultima Data\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Atual'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+      "height": 1280.00,
+      "name": "c8b07fa06009701ced1d",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5833e23de1cc32040825\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":186.9575139983547,\"z\":0,\"width\":719.5690364355279,\"height\":652.1773744128652,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"@Medidas.Badeira\"},{\"queryRef\":\"Dim_Estados.Nome\"},{\"queryRef\":\"@Medidas.Total apoiamentos\"},{\"queryRef\":\"@Medidas.Apoiamentos mín\"},{\"queryRef\":\"@Medidas.Variação diária\"},{\"queryRef\":\"@Medidas.% do minimo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Estados\",\"Type\":0},{\"Name\":\"@\",\"Entity\":\"@Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Nome\"},\"Name\":\"Dim_Estados.Nome\",\"NativeReferenceName\":\"Nome\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"@\"}},\"Property\":\"Total apoiamentos\"},\"Name\":\"@Medidas.Total apoiamentos\",\"NativeReferenceName\":\"Apoios\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"@\"}},\"Property\":\"Apoiamentos mín\"},\"Name\":\"@Medidas.Apoiamentos mín\",\"NativeReferenceName\":\"Mínimo\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"@\"}},\"Property\":\"Variação diária\"},\"Name\":\"@Medidas.Variação diária\",\"NativeReferenceName\":\"No dia\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"@\"}},\"Property\":\"% do minimo\"},\"Name\":\"@Medidas.% do minimo\",\"NativeReferenceName\":\"%\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"@\"}},\"Property\":\"Badeira\"},\"Name\":\"@Medidas.Badeira\",\"NativeReferenceName\":\"  \"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"@\"}},\"Property\":\"Total apoiamentos\"}}}]},\"columnProperties\":{\"@Medidas.Apoiamentos mín\":{\"displayName\":\"Mínimo\"},\"@Medidas.Variação diária\":{\"displayName\":\"No dia\"},\"@Medidas.Badeira\":{\"displayName\":\"  \"},\"@Medidas.Total apoiamentos\":{\"displayName\":\"Apoios\"},\"@Medidas.% do minimo\":{\"displayName\":\"%\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{},\"selector\":{\"metadata\":\"@Medidas.Total apoiamentos\"}},{\"properties\":{},\"selector\":{\"metadata\":\"@Medidas.Apoiamentos mín\"}},{\"properties\":{},\"selector\":{\"metadata\":\"@Medidas.Variação diária\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"244.044784830386D\"}}}},\"selector\":{\"metadata\":\"Dim_Estados.Nome\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"38.476843859146534D\"}}}},\"selector\":{\"metadata\":\"@Medidas.Badeira\"}}],\"columnHeaders\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FCB522'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"grid\":[{\"properties\":{\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"imageHeight\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"imageWidth\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}}}}],\"total\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FCB522'\"}}}}}}}],\"values\":[{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"@Medidas.Apoiamentos mín\"}},{\"properties\":{\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"urlIcon\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}},{\"properties\":{\"icon\":{\"kind\":\"Icon\",\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'After'\"}}},\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}},\"value\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"@Medidas\"}},\"Property\":\"Formatação acima do mínimo\"}},\"Right\":{\"Literal\":{\"Value\":\"1D\"}}}},\"Value\":{\"Literal\":{\"Value\":\"'CircleMedium'\"}}}]}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":0}}],\"metadata\":\"@Medidas.Apoiamentos mín\"}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showVisualInformationButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showVisualWarningButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showVisualErrorButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showDrillRoleSelector\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showDrillUpButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showDrillToggleButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showDrillDownLevelButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showDrillDownExpandButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showPinButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showSeeDataLayoutToggleButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showOptionsMenu\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showFilterRestatementButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'TabelaRanking'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 652.18,
+          "width": 719.57,
+          "x": 0.00,
+          "y": 186.96,
+          "z": 0.00
+        }
+      ],
+      "width": 720.00
+    }
+  ]
+}

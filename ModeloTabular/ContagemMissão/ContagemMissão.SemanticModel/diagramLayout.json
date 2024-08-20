@@ -1,0 +1,125 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 1.6000000238418579
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 578,
+            "y": 346
+          },
+          "nodeIndex": "@Medidas",
+          "nodeLineageTag": "ac2ecc59-48a8-49aa-87fd-87fc53a95065",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Dim_Calendario",
+          "nodeLineageTag": "9aea7f4f-9ad7-462a-a4b2-0e2b126f2dee",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 370,
+            "y": 0
+          },
+          "nodeIndex": "Dim_Estados",
+          "nodeLineageTag": "2d7b0f2a-581d-4dfd-a91f-ded24d32d47a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 179,
+            "y": 352
+          },
+          "nodeIndex": "Fato_Apoiamentos",
+          "nodeLineageTag": "5e25cacd-e9ad-4537-b216-eb9f9435ee75",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 862,
+            "y": 212
+          },
+          "nodeIndex": "Atualização",
+          "nodeLineageTag": "daf817b5-863a-41d9-8649-c0917bc6012a",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 571.59999465942383,
+            "y": 238
+          },
+          "nodeIndex": "Coleta Aliança",
+          "nodeLineageTag": "27b01061-5e66-4797-8112-3dfa256d946c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 802.9999885559082,
+            "y": 29.600000381469727
+          },
+          "nodeIndex": "Bandeiras",
+          "nodeLineageTag": "7aab7592-e7b1-477d-8000-8e8cfcbeb543",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1146,
+            "y": 164
+          },
+          "nodeIndex": "ResumoExportao",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
