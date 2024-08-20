@@ -1,4 +1,3 @@
-
 import time
 from pytz import timezone
 from ImportarPartidos import importacao  # Importa a função de importação do módulo ImportarPartidos
