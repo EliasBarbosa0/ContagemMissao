@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.1203.0 (24.07)"
+        "value": "2.132.908.0 (24.08)"
       },
       {
         "name": "PBI_ProTooling",
@@ -1374,6 +1374,99 @@
                   }
                 ]
               },
+              "medida.data_do_último_recorde": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "@Medidas",
+                    "ConceptualProperty": "Data do último recorde"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data do último recorde": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "information do último recorde": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "fact do último recorde": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "info do último recorde": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "statistic do último recorde": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "document do último recorde": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "figure do último recorde": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "record do último recorde": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  }
+                ]
+              },
               "medida.data_hora_atualização": {
                 "Definition": {
                   "Binding": {
@@ -2421,6 +2514,99 @@
                   }
                 ]
               },
+              "medida.última_data_listagem": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "@Medidas",
+                    "ConceptualProperty": "Última data listagem"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "última data listagem": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "última information listagem": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "última fact listagem": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "última info listagem": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "última statistic listagem": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "última document listagem": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "última figure listagem": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "última record listagem": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
               "medida.última_validação": {
                 "Definition": {
                   "Binding": {
@@ -2444,6 +2630,22 @@
                   }
                 ]
               },
+              "medida.último_recorde_diário": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "@Medidas",
+                    "ConceptualProperty": "Último recorde diário"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "último recorde diário": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "resumo_exportao": {
                 "Definition": {
                   "Binding": {
@@ -2462,6 +2664,299 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v11___Total_apoiamentos11__Total_apoiamento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "11 - Total_apoiamentos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "11 - Total_apoiamento": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "11 Total_apoiamento": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v12___Apoiamentos_necessarios12__Apoiamentos_necessario": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "12 - Apoiamentos_necessarios"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "12 - Apoiamentos_necessario": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "12 Apoiamentos_necessario": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v13___Validacoes_restantes13__Validacoes_restante": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "13 - Validacoes_restantes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "13 - Validacoes_restante": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "13 Validacoes_restante": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v14___Dias_uteis_restantes_ate_o_prazo_final_no_TSE14__Dias_uteis_restantes_ate_o_prazo_final_no_TSE": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "14 - Dias_uteis_restantes_ate_o_prazo_final_no_TSE"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "14 - Dias_uteis_restantes_ate_o_prazo_final_no_TSE": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "14 Dias_uteis_restantes_ate_o_prazo_final_no_TSE": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v15___Numero_de_estados_que_precisam_coletar_o_minimo15__Numero_de_estados_que_precisam_coletar_o_minimo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "15 - Numero_de_estados_que_precisam_coletar_o_minimo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "15 - Numero_de_estados_que_precisam_coletar_o_minimo": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "15 Numero_de_estados_que_precisam_coletar_o_minimo": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v16___Estados_que_ja_cumpriram_o_minimo16__Estados_que_ja_cumpriram_o_minimo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "16 - Estados_que_ja_cumpriram_o_minimo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "16 - Estados_que_ja_cumpriram_o_minimo": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "16 Estados_que_ja_cumpriram_o_minimo": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v17___Expectativa_de_conclusao17__Expectativa_de_conclusao": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "17 - Expectativa_de_conclusao"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "17 - Expectativa_de_conclusao": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "17 Expectativa_de_conclusao": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v18___DataHoraAtualizacao18__DataHoraAtualizacao": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "18 - DataHoraAtualizacao"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "18 - DataHoraAtualizacao": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "18 DataHoraAtualizacao": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v19___Validações_diarias_necessarias_ate_o_prazo_final_no_TSE19_validações_diarias_necessaria_ate_o_prazo_final_no_TSE": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "19 - Validações_diarias_necessarias_ate_o_prazo_final_no_TSE"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "19 validações diarias necessaria ate o prazo final no TSE": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "19 validaçõe diaria necessaria ate o prazo final no TSE": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v20___Média_diária_úlimos_7_dias20__média_diária_úlimos_7_dias": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "20 - Média diária úlimos 7 dias"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "20 - média diária úlimos 7 dias": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "20 - média diária úlimo 7 dias": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "20 média diária úlimos 7 dias": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "20 média diária úlimo 7 dias": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.7566
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v21___Ultimo_recorde_diário21__ultimo_recorde_diário": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "21 - Ultimo recorde diário"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "21 - ultimo recorde diário": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "21 ultimo recorde diário": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "resumo_exportao.v22___Variacao_diaria22__variacao_diaria": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ResumoExportao",
+                    "ConceptualProperty": "22 - Variacao diaria"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "22 - variacao diaria": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "22 variacao diaria": {
+                      "State": "Generated",
+                      "Weight": 0.97
                     }
                   }
                 ]
@@ -3917,6 +4412,39 @@
                 },
                 "State": "Generated"
               },
+              "fato_apoiamento_has_medida_última_data_listagem": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.última_data_listagem"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have_última_data_listagem",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "medida.última_data_listagem": {
+                    "Target": {
+                      "Entity": "medida.última_data_listagem"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fato_apoiamento_has_medida_última_validação": {
                 "Binding": {
                   "ConceptualEntity": "Fato_Apoiamentos"
@@ -4176,6 +4704,39 @@
                   "medida.data_corte": {
                     "Target": {
                       "Entity": "medida.data_corte"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_data_do_último_recorde": {
+                "Binding": {
+                  "ConceptualEntity": "@Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.data_do_último_recorde"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_data_do_último_recorde",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.data_do_último_recorde": {
+                    "Target": {
+                      "Entity": "medida.data_do_último_recorde"
                     }
                   }
                 },
@@ -4940,40 +5501,40 @@
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_apoiamentos_necessario": {
+              "medida_has_último_recorde_diário": {
                 "Binding": {
-                  "ConceptualEntity": "ResumoExportao"
+                  "ConceptualEntity": "@Medidas"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.apoiamentos_necessario"
+                        "Role": "medida.último_recorde_diário"
                       },
                       "Subject": {
-                        "Role": "resumo_exportao"
+                        "Role": "medida"
                       }
                     },
-                    "ID": "resumo_exportaos_have_apoiamentos_necessarios",
+                    "ID": "medidas_have_último_recorde_diário",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "resumo_exportao": {
+                  "medida": {
                     "Target": {
-                      "Entity": "resumo_exportao"
+                      "Entity": "medida"
                     }
                   },
-                  "resumo_exportao.apoiamentos_necessario": {
+                  "medida.último_recorde_diário": {
                     "Target": {
-                      "Entity": "resumo_exportao.apoiamentos_necessario"
+                      "Entity": "medida.último_recorde_diário"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_data_hora_atualizacao": {
+              "resumo_exportao_has_v11___Total_apoiamentos11__Total_apoiamento": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -4981,13 +5542,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.data_hora_atualizacao"
+                        "Role": "resumo_exportao.v11___Total_apoiamentos11__Total_apoiamento"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_data_hora_atualizacaos",
+                    "ID": "resumo_exportaos_have_11__Total_apoiamentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -4998,15 +5559,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.data_hora_atualizacao": {
+                  "resumo_exportao.v11___Total_apoiamentos11__Total_apoiamento": {
                     "Target": {
-                      "Entity": "resumo_exportao.data_hora_atualizacao"
+                      "Entity": "resumo_exportao.v11___Total_apoiamentos11__Total_apoiamento"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_dias_uteis_restante_ate_o_prazo_final_no_TSE": {
+              "resumo_exportao_has_v12___Apoiamentos_necessarios12__Apoiamentos_necessario": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5014,13 +5575,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.dias_uteis_restante_ate_o_prazo_final_no_TSE"
+                        "Role": "resumo_exportao.v12___Apoiamentos_necessarios12__Apoiamentos_necessario"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_dias_uteis_restante_ate_o_prazo_final_no_TSE",
+                    "ID": "resumo_exportaos_have_12__Apoiamentos_necessarios",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5031,15 +5592,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.dias_uteis_restante_ate_o_prazo_final_no_TSE": {
+                  "resumo_exportao.v12___Apoiamentos_necessarios12__Apoiamentos_necessario": {
                     "Target": {
-                      "Entity": "resumo_exportao.dias_uteis_restante_ate_o_prazo_final_no_TSE"
+                      "Entity": "resumo_exportao.v12___Apoiamentos_necessarios12__Apoiamentos_necessario"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_estados_que_ja_cumpriram_o_minimo": {
+              "resumo_exportao_has_v13___Validacoes_restantes13__Validacoes_restante": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5047,13 +5608,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.estados_que_ja_cumpriram_o_minimo"
+                        "Role": "resumo_exportao.v13___Validacoes_restantes13__Validacoes_restante"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_estados_que_ja_cumpriram_o_minimos",
+                    "ID": "resumo_exportaos_have_13__Validacoes_restantes",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5064,15 +5625,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.estados_que_ja_cumpriram_o_minimo": {
+                  "resumo_exportao.v13___Validacoes_restantes13__Validacoes_restante": {
                     "Target": {
-                      "Entity": "resumo_exportao.estados_que_ja_cumpriram_o_minimo"
+                      "Entity": "resumo_exportao.v13___Validacoes_restantes13__Validacoes_restante"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_expectativa_de_conclusao": {
+              "resumo_exportao_has_v14___Dias_uteis_restantes_ate_o_prazo_final_no_TSE14__Dias_uteis_restantes_ate_o_prazo_final_no_TSE": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5080,13 +5641,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.expectativa_de_conclusao"
+                        "Role": "resumo_exportao.v14___Dias_uteis_restantes_ate_o_prazo_final_no_TSE14__Dias_uteis_restantes_ate_o_prazo_final_no_TSE"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_expectativa_de_conclusaos",
+                    "ID": "resumo_exportaos_have_14__Dias_uteis_restantes_ate_o_prazo_final_no_TSEs",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5097,15 +5658,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.expectativa_de_conclusao": {
+                  "resumo_exportao.v14___Dias_uteis_restantes_ate_o_prazo_final_no_TSE14__Dias_uteis_restantes_ate_o_prazo_final_no_TSE": {
                     "Target": {
-                      "Entity": "resumo_exportao.expectativa_de_conclusao"
+                      "Entity": "resumo_exportao.v14___Dias_uteis_restantes_ate_o_prazo_final_no_TSE14__Dias_uteis_restantes_ate_o_prazo_final_no_TSE"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_média_diária_úlimos_7_dias": {
+              "resumo_exportao_has_v15___Numero_de_estados_que_precisam_coletar_o_minimo15__Numero_de_estados_que_precisam_coletar_o_minimo": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5113,13 +5674,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.média_diária_úlimos_7_dias"
+                        "Role": "resumo_exportao.v15___Numero_de_estados_que_precisam_coletar_o_minimo15__Numero_de_estados_que_precisam_coletar_o_minimo"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_média_diária_úlimos_7_dias",
+                    "ID": "resumo_exportaos_have_15__Numero_de_estados_que_precisam_coletar_o_minimos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5130,15 +5691,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.média_diária_úlimos_7_dias": {
+                  "resumo_exportao.v15___Numero_de_estados_que_precisam_coletar_o_minimo15__Numero_de_estados_que_precisam_coletar_o_minimo": {
                     "Target": {
-                      "Entity": "resumo_exportao.média_diária_úlimos_7_dias"
+                      "Entity": "resumo_exportao.v15___Numero_de_estados_que_precisam_coletar_o_minimo15__Numero_de_estados_que_precisam_coletar_o_minimo"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_numero_de_estados_que_precisam_coletar_o_minimo": {
+              "resumo_exportao_has_v16___Estados_que_ja_cumpriram_o_minimo16__Estados_que_ja_cumpriram_o_minimo": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5146,13 +5707,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.numero_de_estados_que_precisam_coletar_o_minimo"
+                        "Role": "resumo_exportao.v16___Estados_que_ja_cumpriram_o_minimo16__Estados_que_ja_cumpriram_o_minimo"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_numero_de_estados_que_precisam_coletar_o_minimos",
+                    "ID": "resumo_exportaos_have_16__Estados_que_ja_cumpriram_o_minimos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5163,15 +5724,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.numero_de_estados_que_precisam_coletar_o_minimo": {
+                  "resumo_exportao.v16___Estados_que_ja_cumpriram_o_minimo16__Estados_que_ja_cumpriram_o_minimo": {
                     "Target": {
-                      "Entity": "resumo_exportao.numero_de_estados_que_precisam_coletar_o_minimo"
+                      "Entity": "resumo_exportao.v16___Estados_que_ja_cumpriram_o_minimo16__Estados_que_ja_cumpriram_o_minimo"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_total_apoiamento": {
+              "resumo_exportao_has_v17___Expectativa_de_conclusao17__Expectativa_de_conclusao": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5179,13 +5740,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.total_apoiamento"
+                        "Role": "resumo_exportao.v17___Expectativa_de_conclusao17__Expectativa_de_conclusao"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_total_apoiamentos",
+                    "ID": "resumo_exportaos_have_17__Expectativa_de_conclusaos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5196,15 +5757,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.total_apoiamento": {
+                  "resumo_exportao.v17___Expectativa_de_conclusao17__Expectativa_de_conclusao": {
                     "Target": {
-                      "Entity": "resumo_exportao.total_apoiamento"
+                      "Entity": "resumo_exportao.v17___Expectativa_de_conclusao17__Expectativa_de_conclusao"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_validacoes_restante": {
+              "resumo_exportao_has_v18___DataHoraAtualizacao18__DataHoraAtualizacao": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5212,13 +5773,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.validacoes_restante"
+                        "Role": "resumo_exportao.v18___DataHoraAtualizacao18__DataHoraAtualizacao"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_validacoes_restantes",
+                    "ID": "resumo_exportaos_have_18__DataHoraAtualizacaos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5229,15 +5790,15 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.validacoes_restante": {
+                  "resumo_exportao.v18___DataHoraAtualizacao18__DataHoraAtualizacao": {
                     "Target": {
-                      "Entity": "resumo_exportao.validacoes_restante"
+                      "Entity": "resumo_exportao.v18___DataHoraAtualizacao18__DataHoraAtualizacao"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "resumo_exportao_has_validações_diarias_necessaria_ate_o_prazo_final_no_TSE": {
+              "resumo_exportao_has_v19___Validações_diarias_necessarias_ate_o_prazo_final_no_TSE19_validações_diarias_necessaria_ate_o_prazo_final_no_TSE": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
                 },
@@ -5245,13 +5806,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "resumo_exportao.validações_diarias_necessaria_ate_o_prazo_final_no_TSE"
+                        "Role": "resumo_exportao.v19___Validações_diarias_necessarias_ate_o_prazo_final_no_TSE19_validações_diarias_necessaria_ate_o_prazo_final_no_TSE"
                       },
                       "Subject": {
                         "Role": "resumo_exportao"
                       }
                     },
-                    "ID": "resumo_exportaos_have_validações_diarias_necessaria_ate_o_prazo_final_no_TSE",
+                    "ID": "resumo_exportaos_have_19_validações_diarias_necessaria_ate_o_prazo_final_no_TSE",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5262,9 +5823,108 @@
                       "Entity": "resumo_exportao"
                     }
                   },
-                  "resumo_exportao.validações_diarias_necessaria_ate_o_prazo_final_no_TSE": {
+                  "resumo_exportao.v19___Validações_diarias_necessarias_ate_o_prazo_final_no_TSE19_validações_diarias_necessaria_ate_o_prazo_final_no_TSE": {
                     "Target": {
-                      "Entity": "resumo_exportao.validações_diarias_necessaria_ate_o_prazo_final_no_TSE"
+                      "Entity": "resumo_exportao.v19___Validações_diarias_necessarias_ate_o_prazo_final_no_TSE19_validações_diarias_necessaria_ate_o_prazo_final_no_TSE"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "resumo_exportao_has_v20___Média_diária_úlimos_7_dias20__média_diária_úlimos_7_dias": {
+                "Binding": {
+                  "ConceptualEntity": "ResumoExportao"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "resumo_exportao.v20___Média_diária_úlimos_7_dias20__média_diária_úlimos_7_dias"
+                      },
+                      "Subject": {
+                        "Role": "resumo_exportao"
+                      }
+                    },
+                    "ID": "resumo_exportaos_have_20__média_diária_úlimos_7_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "resumo_exportao": {
+                    "Target": {
+                      "Entity": "resumo_exportao"
+                    }
+                  },
+                  "resumo_exportao.v20___Média_diária_úlimos_7_dias20__média_diária_úlimos_7_dias": {
+                    "Target": {
+                      "Entity": "resumo_exportao.v20___Média_diária_úlimos_7_dias20__média_diária_úlimos_7_dias"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "resumo_exportao_has_v21___Ultimo_recorde_diário21__ultimo_recorde_diário": {
+                "Binding": {
+                  "ConceptualEntity": "ResumoExportao"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "resumo_exportao.v21___Ultimo_recorde_diário21__ultimo_recorde_diário"
+                      },
+                      "Subject": {
+                        "Role": "resumo_exportao"
+                      }
+                    },
+                    "ID": "resumo_exportaos_have_21__ultimo_recorde_diários",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "resumo_exportao": {
+                    "Target": {
+                      "Entity": "resumo_exportao"
+                    }
+                  },
+                  "resumo_exportao.v21___Ultimo_recorde_diário21__ultimo_recorde_diário": {
+                    "Target": {
+                      "Entity": "resumo_exportao.v21___Ultimo_recorde_diário21__ultimo_recorde_diário"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "resumo_exportao_has_v22___Variacao_diaria22__variacao_diaria": {
+                "Binding": {
+                  "ConceptualEntity": "ResumoExportao"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "resumo_exportao.v22___Variacao_diaria22__variacao_diaria"
+                      },
+                      "Subject": {
+                        "Role": "resumo_exportao"
+                      }
+                    },
+                    "ID": "resumo_exportaos_have_22__variacao_diarias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "resumo_exportao": {
+                    "Target": {
+                      "Entity": "resumo_exportao"
+                    }
+                  },
+                  "resumo_exportao.v22___Variacao_diaria22__variacao_diaria": {
+                    "Target": {
+                      "Entity": "resumo_exportao.v22___Variacao_diaria22__variacao_diaria"
                     }
                   }
                 },
@@ -6792,6 +7452,19 @@
             ],
             "formatString": "Short Date",
             "lineageTag": "ccb1678d-1571-444e-a195-cfd34ff40543"
+          },
+          {
+            "name": "Última data listagem",
+            "expression": [
+              "",
+              "",
+              "LASTNONBLANK(",
+              "    ALL(Dim_Calendario[Data]),",
+              "    CALCULATE(SUM(Fato_Apoiamentos[Apoiamentos]))",
+              ")"
+            ],
+            "formatString": "Short Date",
+            "lineageTag": "30732103-0a30-46b9-b719-35cd67242296"
           }
         ],
         "partitions": [
