@@ -1,6 +1,0 @@
-// Saiba mais sobre consultas DAX em https://aka.ms/dax-queries
-
-// Aqui está um exemplo de consulta DAX do seu modelo, clique em 'Executar'
-// Experimente outras consultas DAX clicando com o botão direito em uma tabela, coluna ou medida no painel de dados e escolhendo uma em 'Consultas rápidas'
-EVALUATE
-    TOPN(100, 'Dim_Estados')
