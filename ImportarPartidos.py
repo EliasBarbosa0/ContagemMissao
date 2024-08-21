@@ -18,7 +18,7 @@ def importacao():
 
     # Configurações do navegador Chrome para rodar em modo headless
     options = Options()
-    #options.add_argument("--headless=new")
+    options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
 
     # Acessa a página principal do site do TSE
