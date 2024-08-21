@@ -13,16 +13,11 @@ scheduler = BlockingScheduler(timezone=timezone('America/Sao_Paulo'))
 def tarefa():
     try:
         importacao()
+        time.sleep(420)
+        twitt()
 
     except:
-        print('Ocorreu um erro na importação')
-    
-    finally:
-        time.sleep(420)
-        try:
-            twitt()
-        except:
-            print('Ocorreu um erro ao twittar')
+        print('Ocorreu um erro na importação e/ou twitt')
 
 def tarefa2():
     try:

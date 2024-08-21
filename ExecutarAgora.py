@@ -7,17 +7,11 @@ def tarefa():
     # Tenta executar a importação dos dados
     try:
         importacao()
-    except:
-        # Captura e exibe uma mensagem de erro caso a importação falhe
-        print('Ocorreu um erro na importação')
-    finally:
-        # Aguarda 420 segundos (7 minutos) antes de tentar postar o tweet
         time.sleep(420)
-        try:
-            twitt()
-        except:
-            # Captura e exibe uma mensagem de erro caso a postagem do tweet falhe
-            print('Ocorreu um erro ao twittar')
+        twitt()
+
+    except:
+        print('Ocorreu um erro na importação e/ou twitt')
 
 def tarefa2():
     # Tenta executar a importação dos dados
