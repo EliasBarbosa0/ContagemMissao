@@ -26,3 +26,6 @@ def corpo():
     )
 
     return texto
+
+if __name__ == "__main__":
+    print( corpo() )

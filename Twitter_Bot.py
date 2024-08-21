@@ -45,3 +45,6 @@ def twitt():
     # Imprime uma mensagem de confirmação no console
     print("Tweet postado com sucesso.")
     print('\n==================================================================================================\n')
+
+if __name__ == "__main__":
+    twitt()

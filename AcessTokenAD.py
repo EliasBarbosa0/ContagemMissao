@@ -29,3 +29,6 @@ def get_access_token():
         raise Exception(f"Falha ao obter token: {token_response.status_code} - {token_response.text}")
     
     return token_response.json().get('access_token')
+
+if __name__ == "__main__":
+   print( get_access_token() )

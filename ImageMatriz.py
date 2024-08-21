@@ -60,3 +60,6 @@ def tirar_screenshot_objeto():
         driver.quit()
 
     return objeto_screenshot_path
+
+if __name__ == "__main__":
+    tirar_screenshot_objeto()

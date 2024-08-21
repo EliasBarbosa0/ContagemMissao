@@ -18,7 +18,7 @@ def importacao():
 
     # Configurações do navegador Chrome para rodar em modo headless
     options = Options()
-    options.add_argument("--headless=new")
+    #options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
 
     # Acessa a página principal do site do TSE
@@ -122,3 +122,6 @@ def importacao():
     data_e_hora_em_texto = agora.strftime('%d/%m/%Y %H:%M')
     print(f'Execução da importação realizada com sucesso, data_hora: {data_e_hora_em_texto}')
     print('\n==================================================================================================\n')
+
+if __name__ == "__main__":
+    importacao()

@@ -51,3 +51,6 @@ def execute_dax_query():
             values.extend(row.values())
     
     return values
+
+if __name__ == "__main__":
+   print( execute_dax_query() )
