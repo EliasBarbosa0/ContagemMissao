@@ -1,53 +1,35 @@
 import time
 from ImportarPartidos import importacao
-
 from Twitter_Bot import twitt
 
-def tarefa():
-    # Tenta executar a importação dos dados
+def executar_tarefa(importar=False, tweet=False):
     try:
-        importacao()
-        time.sleep(420)
-        twitt()
-
-    except:
-        print('Ocorreu um erro na importação e/ou twitt')
-
-def tarefa2():
-    # Tenta executar a importação dos dados
-    try:
-        importacao()
-    except:
-        # Captura e exibe uma mensagem de erro caso a importação falhe
-        print('Ocorreu um erro na importação')
-
-def tarefa3():
-    # Tenta postar o tweet
-    try:
-        twitt()
-    except:
-        # Captura e exibe uma mensagem de erro caso a postagem do tweet falhe
-        print('Ocorreu um erro ao twittar')
+        if importar:
+            importacao()
+        if tweet:
+            if importar:
+                time.sleep(420)
+            twitt()
+    except Exception as e:
+        print(f'Ocorreu um erro: {e}')
 
 # Exibe as opções de tarefas disponíveis para o usuário
-print('1 - Importação dos dados + twitt.')
+print('1 - Importação dos dados + Twitt.')
 print('2 - Importação dos dados.')
 print('3 - Twitt')
 
 # Solicita que o usuário selecione uma tarefa para executar
 selecao = input('Qual tarefa deseja executar?')
 
-# Utiliza a instrução match para executar a tarefa selecionada pelo usuário
-match selecao:
-    case '1':
-        # Executa a tarefa que inclui a importação dos dados e a postagem do tweet
-        tarefa()
-    case '2':
-        # Executa a tarefa que inclui apenas a importação dos dados
-        tarefa2()
-    case '3':
-        # Executa a tarefa que inclui apenas a postagem do tweet
-        tarefa3()
-    case _:
-        # Exibe uma mensagem caso a opção selecionada não seja válida
-        print('Opção não identificada')
+# Dicionário mapeando a seleção do usuário para as ações a serem realizadas
+opcoes = {
+    '1': {'importar': True, 'tweet': True},
+    '2': {'importar': True, 'tweet': False},
+    '3': {'importar': False, 'tweet': True},
+}
+
+# Executa a tarefa correspondente à seleção do usuário, ou exibe uma mensagem de erro se a seleção for inválida
+if selecao in opcoes:
+    executar_tarefa(**opcoes[selecao])
+else:
+    print('Opção não identificada')
