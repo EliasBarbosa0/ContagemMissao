@@ -1,0 +1,52 @@
+ProjeçãoBase = 
+
+VAR DATA_ATUAL = 
+
+CALCULATE(
+    MAX(Dim_Calendario[Data]),
+    ALL(Dim_Calendario),
+    Dim_Calendario[Ultima Data] = "Atual"
+)
+
+VAR DATA_CONTEXTO = SELECTEDVALUE(Dim_Calendario[Data])
+
+VAR TAB_UTEIS = 
+
+FILTER(
+    ALL(Dim_Calendario),
+    [Data] >= DATA_ATUAL&&
+    Dim_Calendario[Útil] = "Sim"&&
+    [Data] <= DATA_CONTEXTO
+)
+
+VAR ULTIMA_MEDIA_7_DIAS = 
+
+CALCULATE(
+    [Média diária úlimos 7 dias],
+    ALL(Dim_Calendario),
+    Dim_Calendario[Ultima Data] = "Atual"
+)
+
+VAR Realizado = 
+
+LASTNONBLANKVALUE(
+    CALCULATETABLE(
+        VALUES(Dim_Calendario[Data]),
+        ALL(Dim_Calendario),
+        Dim_Calendario[Data] < DATA_ATUAL,
+        Dim_Calendario[Útil] = "Sim"
+    ),
+    [Total apoiamentos]
+)
+
+VAR QTD_DIAS_UTEIS = COUNTROWS(TAB_UTEIS)
+
+VAR CALCULO = 
+
+Realizado + (QTD_DIAS_UTEIS * ULTIMA_MEDIA_7_DIAS)
+
+VAR TESTE = 
+
+IF(DATA_CONTEXTO <= DATA_ATUAL, BLANK(), CALCULO)
+
+RETURN TESTE
