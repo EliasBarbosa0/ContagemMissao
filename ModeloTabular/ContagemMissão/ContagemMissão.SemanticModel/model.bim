@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.132.908.0 (24.08)"
+        "value": "2.132.1053.0 (24.08)"
       },
       {
         "name": "PBI_ProTooling",
@@ -1634,6 +1634,16 @@
                     }
                   },
                   {
+                    "% do Mínimo": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
                     "%": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -1680,6 +1690,16 @@
                     "date": {
                       "State": "Generated",
                       "Weight": 0.7
+                    }
+                  },
+                  {
+                    "Projeção de conclusão": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -1989,6 +2009,16 @@
                     "ranking geral": {
                       "State": "Generated"
                     }
+                  },
+                  {
+                    "Ranking": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -2040,6 +2070,16 @@
                   {
                     "restante minimo": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "Restante": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2484,16 +2524,6 @@
                   },
                   {
                     "Validação diária": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Validações no dia": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -3881,6 +3911,105 @@
                 },
                 "State": "Generated"
               },
+              "dim_estado_has_medida_restante": {
+                "Binding": {
+                  "ConceptualEntity": "Dim_Estados"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.restante"
+                      },
+                      "Subject": {
+                        "Role": "dim_estado"
+                      }
+                    },
+                    "ID": "dim_estado_have__restante",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_estado": {
+                    "Target": {
+                      "Entity": "dim_estado"
+                    }
+                  },
+                  "medida.restante": {
+                    "Target": {
+                      "Entity": "medida.restante"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_estado_has_medida_validado": {
+                "Binding": {
+                  "ConceptualEntity": "Dim_Estados"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.validado"
+                      },
+                      "Subject": {
+                        "Role": "dim_estado"
+                      }
+                    },
+                    "ID": "dim_estado_have__validado",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_estado": {
+                    "Target": {
+                      "Entity": "dim_estado"
+                    }
+                  },
+                  "medida.validado": {
+                    "Target": {
+                      "Entity": "medida.validado"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_estado_has_medida_validações_restantes": {
+                "Binding": {
+                  "ConceptualEntity": "Dim_Estados"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.validações_restantes"
+                      },
+                      "Subject": {
+                        "Role": "dim_estado"
+                      }
+                    },
+                    "ID": "dim_estado_have_validações_restantes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_estado": {
+                    "Target": {
+                      "Entity": "dim_estado"
+                    }
+                  },
+                  "medida.validações_restantes": {
+                    "Target": {
+                      "Entity": "medida.validações_restantes"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "dim_estado_has_minimo": {
                 "Binding": {
                   "ConceptualEntity": "Dim_Estados"
@@ -4379,6 +4508,105 @@
                 },
                 "State": "Generated"
               },
+              "fato_apoiamento_has_medida_média_diária_úlimos_7_dias": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.média_diária_úlimos_7_dias"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have_média_diária_úlimos_7_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "medida.média_diária_úlimos_7_dias": {
+                    "Target": {
+                      "Entity": "medida.média_diária_úlimos_7_dias"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fato_apoiamento_has_medida_restante": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.restante"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have__restante",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "medida.restante": {
+                    "Target": {
+                      "Entity": "medida.restante"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fato_apoiamento_has_medida_total_apoiamentos": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.total_apoiamentos"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have_total_apoiamentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "medida.total_apoiamentos": {
+                    "Target": {
+                      "Entity": "medida.total_apoiamentos"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fato_apoiamento_has_medida_total_apoiamentos2": {
                 "Binding": {
                   "ConceptualEntity": "Fato_Apoiamentos"
@@ -4407,6 +4635,105 @@
                   "medida.total_apoiamentos2": {
                     "Target": {
                       "Entity": "medida.total_apoiamentos2"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fato_apoiamento_has_medida_validado": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.validado"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have__validado",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "medida.validado": {
+                    "Target": {
+                      "Entity": "medida.validado"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fato_apoiamento_has_medida_validações_restantes": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.validações_restantes"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have_validações_restantes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "medida.validações_restantes": {
+                    "Target": {
+                      "Entity": "medida.validações_restantes"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fato_apoiamento_has_medida_variação_diária": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.variação_diária"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have_variação_diária",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "medida.variação_diária": {
+                    "Target": {
+                      "Entity": "medida.variação_diária"
                     }
                   }
                 },
@@ -4940,39 +5267,6 @@
                 },
                 "State": "Generated"
               },
-              "medida_has_média_diária_úlimos_7_dias": {
-                "Binding": {
-                  "ConceptualEntity": "@Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.média_diária_úlimos_7_dias"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have_média_diária_úlimos_7_dias",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.média_diária_úlimos_7_dias": {
-                    "Target": {
-                      "Entity": "medida.média_diária_úlimos_7_dias"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "medida_has_mínimo": {
                 "Binding": {
                   "ConceptualEntity": "@Medidas"
@@ -5204,39 +5498,6 @@
                 },
                 "State": "Generated"
               },
-              "medida_has_restante": {
-                "Binding": {
-                  "ConceptualEntity": "@Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.restante"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have__restante",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.restante": {
-                    "Target": {
-                      "Entity": "medida.restante"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "medida_has_restante_minimo": {
                 "Binding": {
                   "ConceptualEntity": "@Medidas"
@@ -5270,39 +5531,6 @@
                 },
                 "State": "Generated"
               },
-              "medida_has_total_apoiamentos": {
-                "Binding": {
-                  "ConceptualEntity": "@Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.total_apoiamentos"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have_total_apoiamentos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.total_apoiamentos": {
-                    "Target": {
-                      "Entity": "medida.total_apoiamentos"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "medida_has_v_": {
                 "Binding": {
                   "ConceptualEntity": "@Medidas"
@@ -5331,39 +5559,6 @@
                   "medida.v_": {
                     "Target": {
                       "Entity": "medida.v_"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "medida_has_validado": {
-                "Binding": {
-                  "ConceptualEntity": "@Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.validado"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have__validado",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.validado": {
-                    "Target": {
-                      "Entity": "medida.validado"
                     }
                   }
                 },
@@ -5430,72 +5625,6 @@
                   "medida.validações_diárias_necessárias_até_o_prazo_final_no_TSE": {
                     "Target": {
                       "Entity": "medida.validações_diárias_necessárias_até_o_prazo_final_no_TSE"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "medida_has_validações_restantes": {
-                "Binding": {
-                  "ConceptualEntity": "@Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.validações_restantes"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have_validações_restantes",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.validações_restantes": {
-                    "Target": {
-                      "Entity": "medida.validações_restantes"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "medida_has_variação_diária": {
-                "Binding": {
-                  "ConceptualEntity": "@Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.variação_diária"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have_variação_diária",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.variação_diária": {
-                    "Target": {
-                      "Entity": "medida.variação_diária"
                     }
                   }
                 },
@@ -6699,7 +6828,7 @@
               "",
               "VAR CALCULO = SUM(Fato_Apoiamentos[Apoiamentos])",
               "",
-              "RETURN IF(CALCULO = 0, BLANK(), CALCULO)"
+              "RETURN CALCULO"
             ],
             "formatString": "#,0",
             "lineageTag": "0a6517a3-62ee-401f-a287-731b0ba7a08f"
@@ -6972,7 +7101,6 @@
               "",
               "SWITCH(",
               "    TRUE(),",
-              "    ISBLANK(APOIOS), BLANK(),",
               "    NOT(ISINSCOPE(Dim_Estados[Nome])), NECESSARIO,",
               "    MINIMO",
               ")"
@@ -7280,11 +7408,8 @@
             "expression": [
               "",
               "",
-              "IF(",
-              "    ISBLANK([Total apoiamentos])",
-              "    , BLANK(),",
-              "    SELECTEDVALUE(Bandeiras[Base64])",
-              ")"
+              "SELECTEDVALUE(Bandeiras[Base64])",
+              ""
             ],
             "lineageTag": "a2a06c06-ee58-4930-ae68-deff8e5e0277"
           },
@@ -7308,6 +7433,8 @@
             "expression": [
               "",
               "",
+              "VAR DATA_RETOMADA = DATE(2024,10,21)",
+              "",
               "VAR DATA_ATUAL = ",
               "",
               "CALCULATE(",
@@ -7318,13 +7445,24 @@
               "",
               "VAR DATA_CONTEXTO = SELECTEDVALUE(Dim_Calendario[Data])",
               "",
-              "VAR TAB_UTEIS = ",
+              "VAR TAB_UTEIS_PERIODO_ELEITORAL = ",
               "",
               "FILTER(",
               "    ALL(Dim_Calendario),",
               "    [Data] >= DATA_ATUAL&&",
               "    Dim_Calendario[Útil] = \"Sim\"&&",
-              "    [Data] <= DATA_CONTEXTO",
+              "    [Data] <= DATA_CONTEXTO&&",
+              "    [Data] <= DATA_RETOMADA",
+              ")",
+              "",
+              "VAR TAB_UTEIS_APOS_PERIODO_ELEITORAL = ",
+              "",
+              "FILTER(",
+              "    ALL(Dim_Calendario),",
+              "    [Data] >= DATA_ATUAL&&",
+              "    Dim_Calendario[Útil] = \"Sim\"&&",
+              "    [Data] <= DATA_CONTEXTO&&",
+              "    [Data] > DATA_RETOMADA",
               ")",
               "",
               "VAR ULTIMA_MEDIA_7_DIAS = ",
@@ -7347,11 +7485,19 @@
               "    [Total apoiamentos]",
               ")",
               "",
-              "VAR QTD_DIAS_UTEIS = COUNTROWS(TAB_UTEIS)",
+              "VAR QTD_DIAS_UTEIS_PERIODO_ELEITORAL = COUNTROWS(TAB_UTEIS_PERIODO_ELEITORAL)",
               "",
-              "VAR CALCULO = ",
+              "VAR QTD_DIAS_UTEIS_APOS_PERIODO_ELEITORAL = COUNTROWS(TAB_UTEIS_APOS_PERIODO_ELEITORAL) ",
               "",
-              "Realizado + (QTD_DIAS_UTEIS * ULTIMA_MEDIA_7_DIAS)",
+              "VAR CALCULO_PERIODO_ELEITORAL = ",
+              "",
+              "Realizado + (QTD_DIAS_UTEIS_PERIODO_ELEITORAL * 0)",
+              "",
+              "VAR CALCULO_APOS_PERIODO_ELEITORAL = ",
+              "",
+              "CALCULO_PERIODO_ELEITORAL + (QTD_DIAS_UTEIS_APOS_PERIODO_ELEITORAL * 3900)",
+              "",
+              "VAR CALCULO = CALCULO_APOS_PERIODO_ELEITORAL",
               "",
               "VAR TESTE = ",
               "",
