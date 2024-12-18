@@ -18,26 +18,26 @@ def importacao():
 
     # Configurações do navegador Chrome para rodar em modo headless
     options = Options()
-    options.add_argument("--headless=new")
+    #options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
 
     # Acessa a página principal do site do TSE
-    driver.get('https://sapf.tse.jus.br/sapf-consulta/paginas/principal#')
+    driver.get('https://sapf.tse.jus.br/sapf-consulta/paginas/principal')
 
     # Aguarda e clica no link para a página de partidos em formação
-    Pagina1 = WebDriverWait(driver, 20).until(
+    Pagina1 = WebDriverWait(driver, 60).until(
         EC.visibility_of_element_located((By.XPATH, '//*[@id="PrincipalForm"]/ul/li[2]/a')))
     Pagina1.click()
 
     # Seleciona a opção de exibir 100 partidos por página
-    Selecao = WebDriverWait(driver, 20).until(
+    Selecao = WebDriverWait(driver, 60).until(
         EC.visibility_of_element_located((By.XPATH, '//*[@id="partidoDataList:j_id2"]')))
     Drop = Select(Selecao)
     Drop.select_by_visible_text('100')
 
     # Espera carregar todos os partidos
     time.sleep(10)
-    Total_Partidos = WebDriverWait(driver, 20).until(
+    Total_Partidos = WebDriverWait(driver, 60).until(
         EC.visibility_of_all_elements_located((By.XPATH, '//*[@id="partidoDataList_data"]/tr')))
     Qtd_Partidos = len(Total_Partidos)
     print(f'Total de partidos em formação: {str(Qtd_Partidos)}')
@@ -47,7 +47,7 @@ def importacao():
 
     # Loop através de cada partido para coletar dados detalhados
     for i in range(Qtd_Partidos):
-        Selecao = WebDriverWait(driver, 20).until(
+        Selecao = WebDriverWait(driver, 60).until(
             EC.visibility_of_element_located((By.XPATH, '//*[@id="partidoDataList:j_id2"]')))
         Drop = Select(Selecao)
         Drop.select_by_visible_text('100')
@@ -57,11 +57,11 @@ def importacao():
         webdriver.ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
 
         # Obtém o nome do partido
-        Nome = WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH,
+        Nome = WebDriverWait(driver, 60).until(EC.visibility_of_element_located((By.XPATH,
             '//*[@id="partidoDataList_data"]/tr[' + str(i + 1) + ']/td[1]'))).get_attribute("innerHTML")
 
         # Clica no link para os detalhes do partido
-        Pagina2 = WebDriverWait(driver, 20).until(
+        Pagina2 = WebDriverWait(driver, 60).until(
             EC.visibility_of_element_located((By.XPATH, '//*[@id="partidoDataList:' + str(i) +':j_idt36"]')))
         Pagina2.click()
 
@@ -71,16 +71,16 @@ def importacao():
             Estado = {
                 "Nome": Nome,
                 "Data": str(hoje),
-                "Estado": WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH,
+                "Estado": WebDriverWait(driver, 60).until(EC.visibility_of_element_located((By.XPATH,
                     '//*[@id="j_idt42:' + str(Count) + ':j_idt44_header"]/span'))).get_attribute("innerHTML"),
-                "Apoiamentos": WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH,
+                "Apoiamentos": WebDriverWait(driver, 60).until(EC.visibility_of_element_located((By.XPATH,
                     '//*[@id="j_idt42:' + str(Count) + ':j_idt44_content"]/table/tbody/tr/td'))).get_attribute("innerHTML").strip(),
             }
             Estados.append(Estado)
             Count += 1
 
         # Volta para a página de lista de partidos
-        Voltar = WebDriverWait(driver, 20).until(
+        Voltar = WebDriverWait(driver, 60).until(
             EC.visibility_of_element_located((By.XPATH, '//*[@id="DetalharPartidosForm"]/div[4]/input')))
         webdriver.ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
         Voltar.click()
