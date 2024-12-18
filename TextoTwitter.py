@@ -16,7 +16,8 @@ def corpo():
     texto = (
         f'{Recorde}'
         f'⌚️ Hora da atualização: {dh(valor[7])}\n'
-        f'🚀 Validados: {fn(valor[0])} ({ fd(valor[0] / valor[1] * 100 )}%)\n'
+        f'🔥 Validados no dia: {fn(valor[11])}\n'
+        f'🚀 Total: {fn(valor[0])} ({ fd(valor[0] / valor[1] * 100 )}%)\n'
         f'🎯 Necessários: {fn(valor[1])}\n'
         f'🗓️ Projeção da conclusão: {dt(valor[6])}\n'
         f'📈 Média diária: {fn(valor[9])}\n'
