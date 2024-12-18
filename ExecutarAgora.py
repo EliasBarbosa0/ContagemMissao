@@ -1,14 +1,18 @@
 import time
 from ImportarPartidos import importacao
+from RefreshDataset import refresh_dataset
 from Twitter_Bot import twitt
 
 def executar_tarefa(importar=False, tweet=False):
     try:
         if importar:
             importacao()
+            time.sleep(15)
+            refresh_dataset()
+
         if tweet:
             if importar:
-                time.sleep(420)
+                time.sleep(100)
             twitt()
     except Exception as e:
         print(f'Ocorreu um erro: {e}')
