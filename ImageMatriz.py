@@ -38,7 +38,7 @@ def tirar_screenshot_objeto():
         largura, altura = imagem_objeto.size
 
         # Calcula a nova área da imagem após o recorte
-        nova_largura = largura - 65
+        nova_largura = largura - 125
         nova_altura = altura - 65
 
         # Define a caixa de recorte (left, top, right, bottom)
