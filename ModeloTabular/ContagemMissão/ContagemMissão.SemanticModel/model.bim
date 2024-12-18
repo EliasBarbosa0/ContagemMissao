@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Conexão\",\"ParametrosBase\",\"Arquivos\",\"Bandeiras\",\"Parametros\",\"Estados\",\"ApoiamentosMínimos\",\"DiasNaoUteis\",\"Dim_Estados\",\"Dim_Calendario\",\"Fato_Apoiamentos\",\"Coleta Aliança\",\"@Medidas\",\"Atualização\"]"
+        "value": "[\"Conexão\",\"ParametrosBase\",\"Arquivos\",\"Bandeiras\",\"Parametros\",\"Estados\",\"ApoiamentosMínimos\",\"DiasNaoUteis\",\"Dim_Estados\",\"Dim_Calendario\",\"Fato_Apoiamentos\",\"Coleta Aliança\",\"@Medidas\",\"Atualização\",\"PrazoFinalTSE\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.132.1053.0 (24.08)"
+        "value": "2.136.1202.0 (24.09)"
       },
       {
         "name": "PBI_ProTooling",
@@ -1006,6 +1006,111 @@
                   }
                 ]
               },
+              "fato_apoiamento.data_final_TSE": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Fato_Apoiamentos",
+                    "ConceptualProperty": "Data Final TSE"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data final TSE": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "TSE": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "final TSE": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "information final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
               "fato_apoiamento.estado": {
                 "Definition": {
                   "Binding": {
@@ -1634,16 +1739,6 @@
                     }
                   },
                   {
-                    "% do Mínimo": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
                     "%": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -1983,16 +2078,6 @@
                       "Type": "Noun",
                       "Weight": 0.591
                     }
-                  },
-                  {
-                    "Projeção na data do congresso": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -2172,6 +2257,16 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
+                    }
+                  },
+                  {
+                    "Total apoiamentos": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -4409,6 +4504,39 @@
                 },
                 "State": "Generated"
               },
+              "fato_apoiamento_has_data_final_TSE": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fato_apoiamento.data_final_TSE"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have_data_final_TSE",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "fato_apoiamento.data_final_TSE": {
+                    "Target": {
+                      "Entity": "fato_apoiamento.data_final_TSE"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fato_apoiamento_has_dim_calendario": {
                 "Binding": {
                   "ConceptualEntity": "Fato_Apoiamentos"
@@ -6086,15 +6214,15 @@
           }
         ],
         "expression": [
-          "let",
-          "    Fonte = ParametrosBase,",
-          "    #\"Linhas Filtradas1\" = Table.SelectRows(Fonte, each ([Extension] = \".xlsx\")),",
-          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas1\",{\"Content\"}),",
-          "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Outras Colunas Removidas\", \"Dados\", each Excel.Workbook([Content])),",
-          "    #\"Dados Expandido\" = Table.ExpandTableColumn(#\"Personalização Adicionada\", \"Dados\", {\"Name\", \"Data\", \"Item\", \"Kind\", \"Hidden\"}, {\"Name\", \"Data\", \"Item\", \"Kind\", \"Hidden\"}),",
-          "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Dados Expandido\", each ([Kind] = \"Table\")),",
-          "    #\"Outras Colunas Removidas1\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\", \"Item\"})",
-          "in",
+          "let\r",
+          "    Fonte = ParametrosBase,\r",
+          "    #\"Linhas Filtradas1\" = Table.SelectRows(Fonte, each ([Extension] = \".xlsx\")),\r",
+          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas1\",{\"Content\"}),\r",
+          "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Outras Colunas Removidas\", \"Dados\", each Excel.Workbook([Content])),\r",
+          "    #\"Dados Expandido\" = Table.ExpandTableColumn(#\"Personalização Adicionada\", \"Dados\", {\"Name\", \"Data\", \"Item\", \"Kind\", \"Hidden\"}, {\"Name\", \"Data\", \"Item\", \"Kind\", \"Hidden\"}),\r",
+          "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Dados Expandido\", each ([Kind] = \"Table\")),\r",
+          "    #\"Outras Colunas Removidas1\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\", \"Item\"})\r",
+          "in\r",
           "    #\"Outras Colunas Removidas1\""
         ],
         "kind": "m",
@@ -6114,13 +6242,13 @@
           }
         ],
         "expression": [
-          "let",
-          "    Fonte = Parametros,",
-          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"Estados\")),",
-          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),",
-          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"Região\", \"Nome\", \"Sigla\"}, {\"Região\", \"Nome\", \"Sigla\"}),",
-          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"Região\", type text}, {\"Nome\", type text}, {\"Sigla\", type text}})",
-          "in",
+          "let\r",
+          "    Fonte = Parametros,\r",
+          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"Estados\")),\r",
+          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),\r",
+          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"Região\", \"Nome\", \"Sigla\"}, {\"Região\", \"Nome\", \"Sigla\"}),\r",
+          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"Região\", type text}, {\"Nome\", type text}, {\"Sigla\", type text}})\r",
+          "in\r",
           "    #\"Tipo Alterado\""
         ],
         "kind": "m",
@@ -6140,13 +6268,13 @@
           }
         ],
         "expression": [
-          "let",
-          "    Fonte = Parametros,",
-          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"ApoiamentosMínimos\")),",
-          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),",
-          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"UF\", \"VOTOS VALIDOS PARA CÂMARA DOS DEPUTADOS\", \"0,5% DOS VOTOS VALIDOS\", \"NÚMERO DO ELEITORADO QUE VOTOU\", \"0,1% DO ELEITORADO QUE VOTOU\"}, {\"UF\", \"VOTOS VALIDOS PARA CÂMARA DOS DEPUTADOS\", \"0,5% DOS VOTOS VALIDOS\", \"NÚMERO DO ELEITORADO QUE VOTOU\", \"0,1% DO ELEITORADO QUE VOTOU\"}),",
-          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"UF\", type text}, {\"VOTOS VALIDOS PARA CÂMARA DOS DEPUTADOS\", type number}, {\"0,5% DOS VOTOS VALIDOS\", type number}, {\"NÚMERO DO ELEITORADO QUE VOTOU\", type number}, {\"0,1% DO ELEITORADO QUE VOTOU\", type number}})",
-          "in",
+          "let\r",
+          "    Fonte = Parametros,\r",
+          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"ApoiamentosMínimos\")),\r",
+          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),\r",
+          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"UF\", \"VOTOS VALIDOS PARA CÂMARA DOS DEPUTADOS\", \"0,5% DOS VOTOS VALIDOS\", \"NÚMERO DO ELEITORADO QUE VOTOU\", \"0,1% DO ELEITORADO QUE VOTOU\"}, {\"UF\", \"VOTOS VALIDOS PARA CÂMARA DOS DEPUTADOS\", \"0,5% DOS VOTOS VALIDOS\", \"NÚMERO DO ELEITORADO QUE VOTOU\", \"0,1% DO ELEITORADO QUE VOTOU\"}),\r",
+          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"UF\", type text}, {\"VOTOS VALIDOS PARA CÂMARA DOS DEPUTADOS\", type number}, {\"0,5% DOS VOTOS VALIDOS\", type number}, {\"NÚMERO DO ELEITORADO QUE VOTOU\", type number}, {\"0,1% DO ELEITORADO QUE VOTOU\", type number}})\r",
+          "in\r",
           "    #\"Tipo Alterado\""
         ],
         "kind": "m",
@@ -6166,13 +6294,13 @@
           }
         ],
         "expression": [
-          "let",
-          "    Fonte = Parametros,",
-          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"DiasNaoUteis\")),",
-          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),",
-          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"Datas\", \"Útil\"}, {\"Datas\", \"Útil\"}),",
-          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"Datas\", type date}, {\"Útil\", type text}})",
-          "in",
+          "let\r",
+          "    Fonte = Parametros,\r",
+          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"DiasNaoUteis\")),\r",
+          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),\r",
+          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"Datas\", \"Útil\"}, {\"Datas\", \"Útil\"}),\r",
+          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"Datas\", type date}, {\"Útil\", type text}})\r",
+          "in\r",
           "    #\"Tipo Alterado\""
         ],
         "kind": "m",
@@ -6192,11 +6320,11 @@
           }
         ],
         "expression": [
-          "let",
-          "    Fonte = Conexão,",
-          "    Arquivos1 = Fonte{[Name=\"Arquivos\"]}[Content],",
-          "    #\"Linhas Filtradas\" = Table.SelectRows(Arquivos1, each [Extension] = \".csv\")",
-          "in",
+          "let\r",
+          "    Fonte = Conexão,\r",
+          "    Arquivos1 = Fonte{[Name=\"Arquivos\"]}[Content],\r",
+          "    #\"Linhas Filtradas\" = Table.SelectRows(Arquivos1, each [Extension] = \".csv\")\r",
+          "in\r",
           "    #\"Linhas Filtradas\""
         ],
         "kind": "m",
@@ -6216,10 +6344,10 @@
           }
         ],
         "expression": [
-          "let",
-          "    Fonte = Conexão,",
-          "    Parametros1 = Fonte{[Name=\"Parametros\"]}[Content]",
-          "in",
+          "let\r",
+          "    Fonte = Conexão,\r",
+          "    Parametros1 = Fonte{[Name=\"Parametros\"]}[Content]\r",
+          "in\r",
           "    Parametros1"
         ],
         "kind": "m",
@@ -6240,15 +6368,41 @@
         ],
         "expression": [
           "let",
-          "    Fonte = SharePoint.Contents(\"https://eliasbarbosa0.sharepoint.com\", [ApiVersion = 15]),",
-          "    #\"Documentos Compartilhados\" = Fonte{[Name=\"Documentos Compartilhados\"]}[Content],",
-          "    #\"Validacao TSE\" = #\"Documentos Compartilhados\"{[Name=\"Validacao TSE\"]}[Content]",
+          "    Fonte = Folder.Contents(\"C:\\Users\\elias\\OneDrive\\Documentos\\Arquivos Missão\")",
           "in",
-          "    #\"Validacao TSE\""
+          "    Fonte"
         ],
         "kind": "m",
         "lineageTag": "47b103b3-ff7c-442e-b65b-9514faf5b548",
         "queryGroup": "ConexãoSharePoint"
+      },
+      {
+        "name": "PrazoFinalTSE",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Fonte = Parametros,",
+          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"DataFinalTSE\")),",
+          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),",
+          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"Partido\", \"Data Abertura CNPJ\", \"Data Final TSE\"}, {\"Partido\", \"Data Abertura CNPJ\", \"Data Final TSE\"}),",
+          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"Partido\", type text}, {\"Data Abertura CNPJ\", type date}, {\"Data Final TSE\", type date}}),",
+          "    #\"Texto Aparado\" = Table.TransformColumns(#\"Tipo Alterado\",{{\"Partido\", Text.Trim, type text}}),",
+          "    #\"Texto Limpo\" = Table.TransformColumns(#\"Texto Aparado\",{{\"Partido\", Text.Clean, type text}})",
+          "in",
+          "    #\"Texto Limpo\""
+        ],
+        "kind": "m",
+        "lineageTag": "16074e1e-f739-45cc-96ea-a7e89722393f",
+        "queryGroup": "Parametros"
       }
     ],
     "queryGroups": [
@@ -6473,6 +6627,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -6536,6 +6694,42 @@
             "lineageTag": "ab4172e6-cbea-4e1f-ba33-4d61df698c4c",
             "sourceColumn": "Apoiamentos",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Data Final TSE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "40ef566f-8d6c-415e-9de1-581c0084fa25",
+            "sourceColumn": "Data Final TSE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data Abertura CNPJ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "ac8c3c3f-463a-4185-9e10-3e6907357752",
+            "sourceColumn": "Data Abertura CNPJ",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "5e25cacd-e9ad-4537-b216-eb9f9435ee75",
@@ -6557,9 +6751,13 @@
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Linhas Filtradas1\",{{\"Data\", type date}, {\"Estado\", type text}, {\"Apoiamentos\", type text}, {\"Nome\", type text}}),",
                 "    #\"Texto Extraído Antes do Delimitador\" = Table.TransformColumns(#\"Tipo Alterado\", {{\"Nome\", each Text.BeforeDelimiter(_, \" - \"), type text}}),",
                 "    #\"Intervalo de Texto Extraído\" = Table.TransformColumns(#\"Texto Extraído Antes do Delimitador\", {{\"Apoiamentos\", each Text.Middle(_, 16, 20), type text}}),",
-                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Intervalo de Texto Extraído\",{{\"Apoiamentos\", type number}})",
+                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Intervalo de Texto Extraído\",{{\"Apoiamentos\", type number}}),",
+                "    #\"Texto Aparado\" = Table.TransformColumns(#\"Tipo Alterado1\",{{\"Nome\", Text.Trim, type text}}),",
+                "    #\"Consultas Mescladas\" = Table.NestedJoin(#\"Texto Aparado\", {\"Nome\"}, PrazoFinalTSE, {\"Partido\"}, \"PrazoFinalTSE\", JoinKind.LeftOuter),",
+                "    #\"PrazoFinalTSE Expandido\" = Table.ExpandTableColumn(#\"Consultas Mescladas\", \"PrazoFinalTSE\", {\"Data Abertura CNPJ\", \"Data Final TSE\"}, {\"Data Abertura CNPJ\", \"Data Final TSE\"}),",
+                "    #\"Texto Limpo\" = Table.TransformColumns(#\"PrazoFinalTSE Expandido\",{{\"Nome\", Text.Clean, type text}})",
                 "in",
-                "    #\"Tipo Alterado1\""
+                "    #\"Texto Limpo\""
               ],
               "type": "m"
             }
@@ -6994,7 +7192,7 @@
               "\tFILTER(",
               "\t\tALL(Dim_Calendario),",
               "\t\t[Data] > Data_Corrente &&",
-              "\t\t[Data] <= DATE(2025, 11, 22) &&",
+              "\t\t[Data] <= DATE(2025, 10, 22) &&",
               "\t\t[Útil] = \"Sim\"",
               "\t)",
               ")"
@@ -7221,7 +7419,7 @@
           },
           {
             "name": "DataHoraAtualização",
-            "expression": "MAX('Atualização'[Atualização]) - TIME(3,0,0)",
+            "expression": "MAX('Atualização'[Atualização])",
             "formatString": "General Date",
             "lineageTag": "7379213b-655b-4429-8a82-28078bc79783"
           },
@@ -7433,8 +7631,6 @@
             "expression": [
               "",
               "",
-              "VAR DATA_RETOMADA = DATE(2024,10,21)",
-              "",
               "VAR DATA_ATUAL = ",
               "",
               "CALCULATE(",
@@ -7445,24 +7641,13 @@
               "",
               "VAR DATA_CONTEXTO = SELECTEDVALUE(Dim_Calendario[Data])",
               "",
-              "VAR TAB_UTEIS_PERIODO_ELEITORAL = ",
+              "VAR TAB_UTEIS = ",
               "",
               "FILTER(",
               "    ALL(Dim_Calendario),",
               "    [Data] >= DATA_ATUAL&&",
               "    Dim_Calendario[Útil] = \"Sim\"&&",
-              "    [Data] <= DATA_CONTEXTO&&",
-              "    [Data] <= DATA_RETOMADA",
-              ")",
-              "",
-              "VAR TAB_UTEIS_APOS_PERIODO_ELEITORAL = ",
-              "",
-              "FILTER(",
-              "    ALL(Dim_Calendario),",
-              "    [Data] >= DATA_ATUAL&&",
-              "    Dim_Calendario[Útil] = \"Sim\"&&",
-              "    [Data] <= DATA_CONTEXTO&&",
-              "    [Data] > DATA_RETOMADA",
+              "    [Data] <= DATA_CONTEXTO",
               ")",
               "",
               "VAR ULTIMA_MEDIA_7_DIAS = ",
@@ -7485,19 +7670,11 @@
               "    [Total apoiamentos]",
               ")",
               "",
-              "VAR QTD_DIAS_UTEIS_PERIODO_ELEITORAL = COUNTROWS(TAB_UTEIS_PERIODO_ELEITORAL)",
+              "VAR QTD_DIAS_UTEIS = COUNTROWS(TAB_UTEIS)",
               "",
-              "VAR QTD_DIAS_UTEIS_APOS_PERIODO_ELEITORAL = COUNTROWS(TAB_UTEIS_APOS_PERIODO_ELEITORAL) ",
+              "VAR CALCULO = ",
               "",
-              "VAR CALCULO_PERIODO_ELEITORAL = ",
-              "",
-              "Realizado + (QTD_DIAS_UTEIS_PERIODO_ELEITORAL * 0)",
-              "",
-              "VAR CALCULO_APOS_PERIODO_ELEITORAL = ",
-              "",
-              "CALCULO_PERIODO_ELEITORAL + (QTD_DIAS_UTEIS_APOS_PERIODO_ELEITORAL * 3900)",
-              "",
-              "VAR CALCULO = CALCULO_APOS_PERIODO_ELEITORAL",
+              "Realizado + (QTD_DIAS_UTEIS * ULTIMA_MEDIA_7_DIAS)",
               "",
               "VAR TESTE = ",
               "",
@@ -7512,7 +7689,7 @@
             "expression": [
               "",
               " ",
-              "DATE(2025, 11, 22)"
+              "DATE(2025, 10, 22)"
             ],
             "formatString": "Short Date",
             "lineageTag": "59032e10-ed7e-4048-a43e-0f58b8542887"
