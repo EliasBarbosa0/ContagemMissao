@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Conexão\",\"ParametrosBase\",\"Arquivos\",\"Bandeiras\",\"Parametros\",\"Estados\",\"ApoiamentosMínimos\",\"DiasNaoUteis\",\"Dim_Estados\",\"Dim_Calendario\",\"Fato_Apoiamentos\",\"Coleta Aliança\",\"@Medidas\",\"Atualização\",\"PrazoFinalTSE\"]"
+        "value": "[\"Conexão\",\"ParametrosBase\",\"Arquivos\",\"Bandeiras\",\"Parametros\",\"Estados\",\"ApoiamentosMínimos\",\"DiasNaoUteis\",\"Dim_Estados\",\"Dim_Calendario\",\"Fato_Apoiamentos\",\"Coleta Aliança\",\"@Medidas\",\"Atualização\",\"Partidos\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -1006,111 +1006,6 @@
                   }
                 ]
               },
-              "fato_apoiamento.data_final_TSE": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Fato_Apoiamentos",
-                    "ConceptualProperty": "Data Final TSE"
-                  }
-                },
-                "SemanticType": "Time",
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "data final TSE": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date": {
-                      "State": "Generated",
-                      "Weight": 0.7
-                    }
-                  },
-                  {
-                    "TSE": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "final TSE": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "information final tse": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "fact final tse": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "info final tse": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "statistic final tse": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "document final tse": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "figure final tse": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "record final tse": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  }
-                ]
-              },
               "fato_apoiamento.estado": {
                 "Definition": {
                   "Binding": {
@@ -1154,7 +1049,10 @@
                       "Weight": 0.9
                     }
                   }
-                ]
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
               },
               "medida": {
                 "Definition": {
@@ -2260,7 +2158,7 @@
                     }
                   },
                   {
-                    "Total apoiamentos": {
+                    "Apoiamentos": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2766,6 +2664,299 @@
                 "Terms": [
                   {
                     "último recorde diário": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "partido": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Partidos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "partido": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "partido.cnpj": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Partidos",
+                    "ConceptualProperty": "CNPJ"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cnpj": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "partido.data_abertura_CNPJ": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Partidos",
+                    "ConceptualProperty": "Data Abertura CNPJ"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data abertura CNPJ": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "information abertura cnpj": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact abertura cnpj": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info abertura cnpj": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic abertura cnpj": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document abertura cnpj": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure abertura cnpj": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record abertura cnpj": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "Abertura CNPJ": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "partido.data_final_TSE": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Partidos",
+                    "ConceptualProperty": "Data Final TSE"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data final TSE": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "TSE": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "final TSE": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "information final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record final tse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "partido.nome_completo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Partidos",
+                    "ConceptualProperty": "Nome Completo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nome completo": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "partido.nome_do_presidente_do_partido": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Partidos",
+                    "ConceptualProperty": "Nome do Presidente do Partido"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nome do presidente do partido": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "partido.partido": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Partidos",
+                    "ConceptualProperty": "Partido"
+                  }
+                },
+                "NameType": "Name",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "partido": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "partido name": {
                       "State": "Generated"
                     }
                   }
@@ -4504,6 +4695,39 @@
                 },
                 "State": "Generated"
               },
+              "fato_apoiamento_has_data_abertura_CNPJ": {
+                "Binding": {
+                  "ConceptualEntity": "Fato_Apoiamentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fato_apoiamento.data_abertura_CNPJ"
+                      },
+                      "Subject": {
+                        "Role": "fato_apoiamento"
+                      }
+                    },
+                    "ID": "fato_apoiamentos_have_data_abertura_CNPJs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fato_apoiamento": {
+                    "Target": {
+                      "Entity": "fato_apoiamento"
+                    }
+                  },
+                  "fato_apoiamento.data_abertura_CNPJ": {
+                    "Target": {
+                      "Entity": "fato_apoiamento.data_abertura_CNPJ"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fato_apoiamento_has_data_final_TSE": {
                 "Binding": {
                   "ConceptualEntity": "Fato_Apoiamentos"
@@ -4933,7 +5157,7 @@
                 },
                 "State": "Generated"
               },
-              "fato_apoiamento_has_nome": {
+              "fato_apoiamento_has_partido": {
                 "Binding": {
                   "ConceptualEntity": "Fato_Apoiamentos"
                 },
@@ -4941,13 +5165,26 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "fato_apoiamento.nome"
+                        "Role": "partido"
                       },
                       "Subject": {
                         "Role": "fato_apoiamento"
                       }
                     },
-                    "ID": "fato_apoiamentos_have_nome",
+                    "ID": "fato_apoiamentos_have_partidos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fato_apoiamento"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "ID": "partidos_have_fato_apoiamentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -4958,9 +5195,16 @@
                       "Entity": "fato_apoiamento"
                     }
                   },
-                  "fato_apoiamento.nome": {
+                  "partido": {
+                    "Nouns": [
+                      {
+                        "nome": {
+                          "State": "Generated"
+                        }
+                      }
+                    ],
                     "Target": {
-                      "Entity": "fato_apoiamento.nome"
+                      "Entity": "partido"
                     }
                   }
                 },
@@ -5791,6 +6035,217 @@
                 },
                 "State": "Generated"
               },
+              "partido_has_cnpj": {
+                "Binding": {
+                  "ConceptualEntity": "Partidos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "partido.cnpj"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "ID": "partidos_have_cnpjs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "partido": {
+                    "Target": {
+                      "Entity": "partido"
+                    }
+                  },
+                  "partido.cnpj": {
+                    "Target": {
+                      "Entity": "partido.cnpj"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "partido_has_data_abertura_CNPJ": {
+                "Binding": {
+                  "ConceptualEntity": "Partidos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "partido.data_abertura_CNPJ"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "ID": "partidos_have_data_abertura_CNPJs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "partido": {
+                    "Target": {
+                      "Entity": "partido"
+                    }
+                  },
+                  "partido.data_abertura_CNPJ": {
+                    "Target": {
+                      "Entity": "partido.data_abertura_CNPJ"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "partido_has_data_final_TSE": {
+                "Binding": {
+                  "ConceptualEntity": "Partidos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "partido.data_final_TSE"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "ID": "partidos_have_data_final_TSE",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "partido": {
+                    "Target": {
+                      "Entity": "partido"
+                    }
+                  },
+                  "partido.data_final_TSE": {
+                    "Target": {
+                      "Entity": "partido.data_final_TSE"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "partido_has_nome_completo": {
+                "Binding": {
+                  "ConceptualEntity": "Partidos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "partido.nome_completo"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "ID": "partidos_have_nome_completos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "partido": {
+                    "Target": {
+                      "Entity": "partido"
+                    }
+                  },
+                  "partido.nome_completo": {
+                    "Target": {
+                      "Entity": "partido.nome_completo"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "partido_has_nome_do_presidente_do_partido": {
+                "Binding": {
+                  "ConceptualEntity": "Partidos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "partido.nome_do_presidente_do_partido"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "ID": "partidos_have_nome_do_presidente_do_partidos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "partido": {
+                    "Target": {
+                      "Entity": "partido"
+                    }
+                  },
+                  "partido.nome_do_presidente_do_partido": {
+                    "Target": {
+                      "Entity": "partido.nome_do_presidente_do_partido"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "partido_has_partido": {
+                "Binding": {
+                  "ConceptualEntity": "Partidos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "partido.partido"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "ID": "partidos_have_partidos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "partidos_are_names_IDs_of_partidos",
+                    "Name": {
+                      "Name": {
+                        "Role": "partido.partido"
+                      },
+                      "Subject": {
+                        "Role": "partido"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "partido": {
+                    "Target": {
+                      "Entity": "partido"
+                    }
+                  },
+                  "partido.partido": {
+                    "Target": {
+                      "Entity": "partido.partido"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "resumo_exportao_has_v11___Total_apoiamentos11__Total_apoiamento": {
                 "Binding": {
                   "ConceptualEntity": "ResumoExportao"
@@ -6375,34 +6830,6 @@
         "kind": "m",
         "lineageTag": "47b103b3-ff7c-442e-b65b-9514faf5b548",
         "queryGroup": "ConexãoSharePoint"
-      },
-      {
-        "name": "PrazoFinalTSE",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "expression": [
-          "let",
-          "    Fonte = Parametros,",
-          "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"DataFinalTSE\")),",
-          "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),",
-          "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"Partido\", \"Data Abertura CNPJ\", \"Data Final TSE\"}, {\"Partido\", \"Data Abertura CNPJ\", \"Data Final TSE\"}),",
-          "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"Partido\", type text}, {\"Data Abertura CNPJ\", type date}, {\"Data Final TSE\", type date}}),",
-          "    #\"Texto Aparado\" = Table.TransformColumns(#\"Tipo Alterado\",{{\"Partido\", Text.Trim, type text}}),",
-          "    #\"Texto Limpo\" = Table.TransformColumns(#\"Texto Aparado\",{{\"Partido\", Text.Clean, type text}})",
-          "in",
-          "    #\"Texto Limpo\""
-        ],
-        "kind": "m",
-        "lineageTag": "16074e1e-f739-45cc-96ea-a7e89722393f",
-        "queryGroup": "Parametros"
       }
     ],
     "queryGroups": [
@@ -6471,6 +6898,13 @@
         "fromTable": "Bandeiras",
         "toColumn": "Sigla",
         "toTable": "Dim_Estados"
+      },
+      {
+        "name": "50dc4d6d-ed9f-b758-87af-dc3a44a900cb",
+        "fromColumn": "Nome",
+        "fromTable": "Fato_Apoiamentos",
+        "toColumn": "Partido",
+        "toTable": "Partidos"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -6694,42 +7128,6 @@
             "lineageTag": "ab4172e6-cbea-4e1f-ba33-4d61df698c4c",
             "sourceColumn": "Apoiamentos",
             "summarizeBy": "sum"
-          },
-          {
-            "name": "Data Final TSE",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Short Date",
-            "lineageTag": "40ef566f-8d6c-415e-9de1-581c0084fa25",
-            "sourceColumn": "Data Final TSE",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data Abertura CNPJ",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Short Date",
-            "lineageTag": "ac8c3c3f-463a-4185-9e10-3e6907357752",
-            "sourceColumn": "Data Abertura CNPJ",
-            "summarizeBy": "none"
           }
         ],
         "lineageTag": "5e25cacd-e9ad-4537-b216-eb9f9435ee75",
@@ -6753,9 +7151,7 @@
                 "    #\"Intervalo de Texto Extraído\" = Table.TransformColumns(#\"Texto Extraído Antes do Delimitador\", {{\"Apoiamentos\", each Text.Middle(_, 16, 20), type text}}),",
                 "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Intervalo de Texto Extraído\",{{\"Apoiamentos\", type number}}),",
                 "    #\"Texto Aparado\" = Table.TransformColumns(#\"Tipo Alterado1\",{{\"Nome\", Text.Trim, type text}}),",
-                "    #\"Consultas Mescladas\" = Table.NestedJoin(#\"Texto Aparado\", {\"Nome\"}, PrazoFinalTSE, {\"Partido\"}, \"PrazoFinalTSE\", JoinKind.LeftOuter),",
-                "    #\"PrazoFinalTSE Expandido\" = Table.ExpandTableColumn(#\"Consultas Mescladas\", \"PrazoFinalTSE\", {\"Data Abertura CNPJ\", \"Data Final TSE\"}, {\"Data Abertura CNPJ\", \"Data Final TSE\"}),",
-                "    #\"Texto Limpo\" = Table.TransformColumns(#\"PrazoFinalTSE Expandido\",{{\"Nome\", Text.Clean, type text}})",
+                "    #\"Texto Limpo\" = Table.TransformColumns(#\"Texto Aparado\",{{\"Nome\", Text.Clean, type text}})",
                 "in",
                 "    #\"Texto Limpo\""
               ],
@@ -8266,6 +8662,132 @@
                 "\t)"
               ],
               "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Partidos",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Partido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a231d5d0-c293-4319-9bb5-fa662011707b",
+            "sourceColumn": "Partido",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Nome Completo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "484c0df5-c8f2-429a-96bc-e82abf1e5382",
+            "sourceColumn": "Nome Completo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CNPJ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "50516c54-26b6-4cd6-9a80-71fe8a549ab8",
+            "sourceColumn": "CNPJ",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Nome do Presidente do Partido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b8587724-06e2-4308-b4e0-d86ffd54e112",
+            "sourceColumn": "Nome do Presidente do Partido",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data Abertura CNPJ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "408545b3-1e2d-4ab5-b6fa-589514d923b9",
+            "sourceColumn": "Data Abertura CNPJ",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data Final TSE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "96d8f52b-479e-472f-809f-4eba5c17b88e",
+            "sourceColumn": "Data Final TSE",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a2e380ce-005f-4b41-9308-3c464f933838",
+        "partitions": [
+          {
+            "name": "Partidos",
+            "mode": "import",
+            "queryGroup": "Parametros",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Parametros,",
+                "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each ([Item] = \"DataFinalTSE\")),",
+                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Linhas Filtradas\",{\"Data\"}),",
+                "    #\"Data Expandido\" = Table.ExpandTableColumn(#\"Outras Colunas Removidas\", \"Data\", {\"Partido\", \"Nome Completo\", \"CNPJ\", \"Nome do Presidente do Partido\", \"Data Abertura CNPJ\", \"Data Final TSE\"}, {\"Partido\", \"Nome Completo\", \"CNPJ\", \"Nome do Presidente do Partido\", \"Data Abertura CNPJ\", \"Data Final TSE\"}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Data Expandido\",{{\"Partido\", type text}, {\"Data Abertura CNPJ\", type date}, {\"Data Final TSE\", type date}, {\"Nome Completo\", type text}, {\"CNPJ\", type text}, {\"Nome do Presidente do Partido\", type text}}),",
+                "    #\"Texto Aparado\" = Table.TransformColumns(#\"Tipo Alterado\",{{\"Partido\", Text.Trim, type text}}),",
+                "    #\"Texto Limpo\" = Table.TransformColumns(#\"Texto Aparado\",{{\"Partido\", Text.Clean, type text}})",
+                "in",
+                "    #\"Texto Limpo\""
+              ],
+              "type": "m"
             }
           }
         ]

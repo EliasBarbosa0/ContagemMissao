@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 25.600000381469727
+        "y": 173.60000610351563
       },
       "nodes": [
         {
@@ -107,6 +107,19 @@
           "nodeIndex": "ResumoExportao",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 560.60000610351563,
+            "y": 497
+          },
+          "nodeIndex": "Partidos",
+          "nodeLineageTag": "a2e380ce-005f-4b41-9308-3c464f933838",
+          "size": {
+            "height": 224,
             "width": 234
           },
           "zIndex": 0
